@@ -12,8 +12,8 @@ MAINTAINER Walker Lee <walkerlee.tw@gmail.com>
 RUN \
   apt-get update && \
   apt-get -y upgrade && \
-  apt-get install -y wget bash-completion && \
-  apt-get install -y build-essential gperf bison flex texinfo gawk libtool automake libncurses5-dev && \
+  apt-get install -y wget bash-completion subversion && \
+  apt-get install -y build-essential gperf bison flex texinfo gawk libtool automake libncurses5-dev libexpat1-dev python-dev && \
   rm -rf /var/lib/apt/lists/*
 
 # Install crosstool-NG.
