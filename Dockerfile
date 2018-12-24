@@ -1,12 +1,12 @@
 #
 # crosstool-NG Dockerfile
 #
-# https://github.com/walkerlee/dockerfile-crosstool-NG
+# https://github.com/donatoaz/dockerfile-crosstool-NG
 #
 
 # Pull base image.
 FROM ubuntu:14.04
-MAINTAINER Walker Lee <walkerlee.tw@gmail.com>
+MAINTAINER Donato Azevedo <donatoaz@gmail.com>
 
 # Install.
 RUN \
@@ -18,7 +18,7 @@ RUN \
 
 # Install crosstool-NG.
 RUN \
-  wget http://crosstool-ng.org/download/crosstool-ng/crosstool-ng-1.20.0.tar.bz2 && \
+  wget http://crosstool-ng.org/download/crosstool-ng/crosstool-ng-1.23.0.tar.bz2 && \
   tar xf crosstool-ng-*.tar.* && \
   cd crosstool-ng-* && \
   ./configure && \
